@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pulltorefreshtest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="22" />
+      <!-- For WebView Sample -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <supports-screens android:anyDensity="true" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+           
+        </activity>
+     <activity
+            android:name="com.example.pulltorefreshtest.samples.LauncherActivity"
+            android:label="PullToRefresh Samples" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.pulltorefreshtest.samples.PullToRefreshListActivity"
+            android:label="PtR ListView" >
+        </activity>
+        <activity
+            android:name="com.example.pulltorefreshtest.samples.PullToRefreshListFragmentActivity"
+            android:label="PtR ListView Fragment" >
+        </activity>
+        <activity
+            android:name="com.example.pulltorefreshtest.samples.PullToRefreshListInViewPagerActivity"
+            android:label="PtR ListView in ViewPager" >
+        </activity>
+        <activity
+            android:name="com.example.pulltorefreshtest.samples.PullToRefreshGridActivity"
+            android:label="PtR GridView" >
+        </activity>
+        <activity
+            android:name="com.example.pulltorefreshtest.samples.PullToRefreshExpandableListActivity"
+            android:label="PtR ExpandableListView" >
+        </activity>
+        <activity
+            android:name="com.example.pulltorefreshtest.samples.PullToRefreshWebViewActivity"
+            android:label="PtR WebView" >
+        </activity>
+        <activity
+            android:name="com.example.pulltorefreshtest.samples.PullToRefreshScrollViewActivity"
+            android:label="PtR ScrollView" >
+        </activity>
+        <activity
+            android:name="com.example.pulltorefreshtest.samples.PullToRefreshHorizontalScrollViewActivity"
+            android:label="PtR HorizontalScrollView" >
+        </activity>
+        <activity
+            android:name="com.example.pulltorefreshtest.samples.PullToRefreshViewPagerActivity"
+            android:label="PtR ViewPager" >
+        </activity>
+        <activity
+            android:name="com.example.pulltorefreshtest.samples.PullToRefreshWebView2Activity"
+            android:label="PtR WebView Advanced" >
+        </activity>
+    </application>
+
+</manifest>
